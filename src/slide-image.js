@@ -53,6 +53,7 @@ registerBlockType( 'create-block/slide-image', {
   supports: {
     // Removes support for an HTML mode.
     html: false,
+    align: true,
   },
 
   parent: ['create-block/carousel'],
