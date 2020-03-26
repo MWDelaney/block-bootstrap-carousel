@@ -237,7 +237,7 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('cre
         });
       }
     }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-      label: "Show Indicators?",
+      label: "Show Indicators",
       help: indicators ? "Indicators will be shown." : "Indicators will be hidden.",
       checked: indicators,
       onChange: function onChange(value) {
@@ -246,7 +246,7 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('cre
         });
       }
     }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-      label: "Show Controls?",
+      label: "Show Controls",
       help: controls ? "Controls will be shown." : "Controls will be hidden.",
       checked: controls,
       onChange: function onChange(value) {
@@ -255,7 +255,7 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('cre
         });
       }
     }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-      label: "Pause on Hover?",
+      label: "Pause on Hover",
       help: pause ? "Slides will stop changing when the mouse is over them." : "Slides will change regardless of the mouse position.",
       checked: pause,
       onChange: function onChange(value) {
@@ -264,7 +264,7 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('cre
         });
       }
     }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-      label: "Autoplay?",
+      label: "Autoplay",
       help: ride ? "Carousel will autoplay." : "Carousel is manually advanced.",
       checked: ride,
       onChange: function onChange(value) {
@@ -273,7 +273,7 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('cre
         });
       }
     }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-      label: "Wrap?",
+      label: "Wrap",
       help: wrap ? "Carousel cycles continuously." : "Carousel has hard stops.",
       checked: wrap,
       onChange: function onChange(value) {
@@ -446,7 +446,8 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('cre
    */
   supports: {
     // Removes support for an HTML mode.
-    html: false
+    html: false,
+    align: true
   },
   parent: ['create-block/carousel'],
 
@@ -557,7 +558,8 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('cre
    */
   supports: {
     // Removes support for an HTML mode.
-    html: false
+    html: false,
+    align: true
   },
   parent: ['create-block/carousel'],
 
