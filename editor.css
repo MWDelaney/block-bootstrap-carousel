@@ -1,0 +1,32 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .carousel-inner {
+  overflow: visible !important;
+}
+
+.wp-block[data-type="create-block/slide-image"],
+.wp-block[data-type="create-block/slide-content"] {
+  display: none;
+}
+
+.wp-block[data-type="create-block/slide-image"] .carousel-item,
+.wp-block[data-type="create-block/slide-content"] .carousel-item {
+  float: none;
+  margin-right: 0;
+  display: block !important;
+}
+
+.wp-block[data-type="create-block/slide-image"]:first-child,
+.wp-block[data-type="create-block/slide-content"]:first-child {
+  display: block !important;
+}
+
+.has-child-selected .wp-block[data-type="create-block/slide-image"],
+.is-selected .wp-block[data-type="create-block/slide-image"],
+.has-child-selected .wp-block[data-type="create-block/slide-content"],
+.is-selected .wp-block[data-type="create-block/slide-content"] {
+  display: block !important;
+}
