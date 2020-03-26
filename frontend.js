@@ -17,5 +17,4 @@ jQuery( document ).ready(function() {
     jQuery('.carousel-indicators li').first().addClass('active');
 
   });
-
 });
