@@ -132,7 +132,7 @@ registerBlockType( 'create-block/carousel', {
             />
 
             <ToggleControl
-              label="Show Indicators?"
+              label="Show Indicators"
               help={
                 indicators
                   ? "Indicators will be shown."
@@ -145,7 +145,7 @@ registerBlockType( 'create-block/carousel', {
             />
 
             <ToggleControl
-              label="Show Controls?"
+              label="Show Controls"
               help={
                 controls
                   ? "Controls will be shown."
@@ -158,7 +158,7 @@ registerBlockType( 'create-block/carousel', {
             />
 
             <ToggleControl
-              label="Pause on Hover?"
+              label="Pause on Hover"
               help={
                 pause
                   ? "Slides will stop changing when the mouse is over them."
@@ -171,7 +171,7 @@ registerBlockType( 'create-block/carousel', {
             />
 
             <ToggleControl
-              label="Autoplay?"
+              label="Autoplay"
               help={
                 ride
                   ? "Carousel will autoplay."
@@ -184,7 +184,7 @@ registerBlockType( 'create-block/carousel', {
             />
 
             <ToggleControl
-              label="Wrap?"
+              label="Wrap"
               help={
                 wrap
                   ? "Carousel cycles continuously."
