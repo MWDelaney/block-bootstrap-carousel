@@ -243,20 +243,20 @@ registerBlockType( 'create-block/carousel', {
     const autoplay = (ride) ? 'carousel' : '';
 
     return (
-      <div id={ `carousel-${ id }` } className={ `carousel slide ${ fadeClass }` } data-ride={ autoplay} data-pause={ pause } data-wrap={ wrap } data-interval={ interval }>
+      <div id={ `carousel-${ id }` } className={ `carousel slide ${ fadeClass }` } data-bs-ride={ autoplay} data-bs-pause={ pause } data-bs-wrap={ wrap } data-bs-interval={ interval }>
         <div className="carousel-inner">
           <InnerBlocks.Content />
         </div>
         { controls == true ? (
         <div className="controls">
-          <a className="carousel-control-prev" href={ `#carousel-${ id }` }   role="button" data-slide="prev">
+          <button className="carousel-control-prev" data-bs-target={ `#carousel-${ id }` } type="button" data-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="sr-only">Previous</span>
-          </a>
-          <a className="carousel-control-next" href={ `#carousel-${ id }` }   role="button" data-slide="next">
+          </button>
+          <button className="carousel-control-next" data-bs-target={ `#carousel-${ id }` } type="button" data-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
-          </a>
+          </button>
         </div>
         ) : '' }
         { indicators == true ? (
